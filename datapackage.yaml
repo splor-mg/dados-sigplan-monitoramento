@@ -1,0 +1,27 @@
+name: sigplan-monitoramento-dados
+period: "2023B5"
+resources:
+  - name: acoes_monitoramento
+    path: data/acoes_monitoramento.txt
+    format: csv
+    encoding: windows-1252
+    dialect:
+      csv:
+        delimiter: '|'
+    schema: schemas/acoes_monitoramento.yaml
+  - name: localizadores_monitoramento_todos
+    path: data/localizadores_monitoramento_todos.txt
+    format: csv
+    encoding: windows-1252
+    dialect:
+      csv:
+        delimiter: '|'
+    schema: schemas/localizadores_monitoramento_todos.yaml
+  - name: relacao_indicadores_apurados
+    path: data/relacao_indicadores_apurados.txt
+    format: csv
+    encoding: windows-1252
+    dialect:
+      csv:
+        delimiter: '|'
+    schema: schemas/relacao_indicadores_apurados.yaml

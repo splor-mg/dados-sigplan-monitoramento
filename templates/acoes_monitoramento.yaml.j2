@@ -1,0 +1,186 @@
+fields:
+  - name: Ano Monitoramento
+    target: ano
+    type: integer
+  - name: Mês Inicial
+    target: mes_inicial
+    type: integer
+  - name: Mês Final
+    target: mes_final
+    type: integer
+  - name: Setor de Governo
+    target: setor_governo
+    type: string
+  - name: Código do Programa
+    target: programa_cod
+    type: integer
+  - name: Nome do Programa
+    target: programa_desc
+    type: string
+  - name: Código da Unidade Orçamentária Responsável pelo Programa
+    target: uo_programa_cod
+    type: integer
+  - name: Unidade Orçamentária Responsável pelo Programa
+    target: uo_programa_nome
+    type: string
+  - name: Código da Unidade Orçamentária Responsável pela Ação
+    target: uo_acao_cod
+    type: integer
+  - name: Unidade Orçamentária Responsável pela Ação
+    target: uo_acao_nome
+    type: string
+  - name: Código da Área Temática
+    target: area_tematica_cod
+    type: integer
+  - name: Área Temática
+    target: area_tematica_desc
+    type: string
+  - name: Código da Função
+    target: funcao_cod
+    type: integer
+  - name: Função
+    target: funcao_desc
+    type: string
+  - name: Código da Subfunção
+    target: subfuncao_cod
+    type: integer
+  - name: Subfunção
+    target: subfuncao_desc
+    type: string
+  - name: Código da Ação
+    target: acao_cod
+    type: integer
+  - name: Título da Ação
+    target: acao_desc
+    type: string
+  - name: Meta não cumulativa?
+    target: is_meta_cumulativa
+    type: boolean
+    trueValues: ['SIM']
+    falseValues: ['NÃO']
+  - name: Código do Tipo de Ação
+    target: identificador_tipo_acao_cod
+    type: integer
+  - name: Tipo de Ação
+    target: identificador_tipo_acao_desc
+    type: string
+  - name: Finalidade da Ação
+    target: acao_finalidade
+    type: string
+  - name: Código do Identificador de Ação Governamental (IAG)
+    target: iag_cod
+    type: integer
+  - name: Identificador de Ação Governamental (IAG)
+    target: iag_desc
+    type: string
+  - name: Código do Projeto Estratégico
+    target: projeto_estrategico_cod
+    type: integer
+  - name: Projeto Estratégico
+    target: projeto_estrategico_desc
+    type: string
+  - name: Código do Público-alvo
+    target: publico_alvo_cod
+    type: integer
+  - name: Público-alvo
+    target: publico_alvo_desc
+    type: string
+  - name: Código do Produto
+    target: produto_cod
+    type: integer
+  - name: Produto
+    target: produto_desc
+    type: string
+  - name: Código da Unidade de Medida do Produto
+    target: produto_unidade_medida_cod
+    type: integer
+  - name: Unidade de Medida do Produto
+    target: produto_unidade_medida_desc
+    type: string
+  - name: Previsão Orçamentária {{ period }} (LOA)
+    target: vlr_credito_inicial
+    type: number
+    decimalChar: ","
+  - name: Orç. Programado Inicial de {{ months[0] }} a {{ months[-1] }}
+    target: vlr_prog_inicial_periodo_ref
+    type: number
+    decimalChar: ","
+    {% for month in months %}
+  - name: Prog. Inicial Outras Desp. {{ month }}
+    target: vlr_prog_inicial_outras_despesas_{{ month|lower }}
+    type: number
+    decimalChar: ","
+    {% endfor %}
+  - name: Total Prog. Inicial Outras Desp.
+    target: vlr_prog_inicial_outras_despesas
+    type: number
+    decimalChar: ","
+    {% for month in months %}
+  - name: Prog. Inicial Desp. Pessoal e Auxílios {{ month }}
+    target: vlr_prog_inicial_pessoal_auxilios_{{ month|lower }}
+    type: number
+    decimalChar: ","
+    {% endfor %}
+  - name: Total Prog. Inicial Desp. Pessoal e Auxílios
+    target: vlr_prog_inicial_pessoal_auxilios
+    type: number
+    decimalChar: ","
+    {% for month in months %}
+  - name: Desp. Realizada {{ month }}
+    target: vlr_despesa_realizada_{{ month|lower }}
+    type: number
+    decimalChar: ","
+    {% endfor %}
+  - name: Crédito Autorizado {{ period }} (LOA + Créditos)
+    target: vlr_credito_autorizado
+    type: number
+    decimalChar: ","
+  - name: Despesa Realizada {{ period }}
+    target: vlr_despesa_realizada
+    type: number
+    decimalChar: ","
+  - name: Previsão Física {{ period }}
+    target: vlr_previsao_fisica
+    type: integer
+  - name: Fis Programado Inicial de {{ months[0] }}  a {{ months[-1] }}
+    target: vlr_prog_fisica_inicial_periodo_ref
+    type: integer
+  - name: Meta Física Reprogramada
+    target: vlr_meta_fisica_reprogramada
+    type: integer
+    {% for month in months %}
+  - name: Fis Realizado {{ month }}
+    target: vlr_fisico_realizado_{{ month|lower }}
+    type: integer
+    {% endfor %}
+  - name: Realização Física {{ period }}
+    target: vlr_fisico_realizado
+    type: integer
+    {% for month in months %}
+  - name: Pessoa Remunerada {{ month }}
+    target: vlr_pessoa_remunerada_{{ month|lower }}
+    type: integer
+    {% endfor %}
+  - name: Realização Pessoa Remunerada
+    target: vlr_realizacao_pessoa_remunerada
+    type: integer
+  - name: Último mês de maior execução
+    target: ultimo_mes_maior_execucao
+    type: integer
+  - name: Ação Não Regionalizada?
+    target: is_acao_nao_regionalizada
+    type: boolean
+    trueValues: ['SIM']
+    falseValues: ['NÃO']
+  - name: Justificativa da Não Regionalização
+    target: justificativa_nao_regionalizacao
+    type: string
+  - name: Objetivo
+    target: objetivo
+    type: string
+  - name: Ação Transposta Durante Exercício
+    target: is_acao_transposta_durante_exercicio
+    type: string
+  - name: ""
+    target: empty_column
+    type: any

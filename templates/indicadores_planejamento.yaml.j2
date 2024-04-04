@@ -1,0 +1,113 @@
+fields:
+  - name: Código do Programa
+    target: programa_cod
+    type: integer
+  - name: Nome do Programa
+    target: programa_nome
+    type: string
+  - name: Exclusão Lógica do Programa
+    target: is_deleted_programa
+    type: boolean
+  - name: Indicador
+    target: indicador
+    type: string
+  - name: Exclusão Lógica do Indicador
+    target: is_deleted_indicador
+    type: boolean
+  - name: Unidade de Medida
+    target: unidade_de_medida
+    type: string
+  - name: Índice de Referência
+    target: indice_de_referencia
+    type: number
+    decimalChar: '.'
+  - name: Em apuração? (Índice de Referência)
+    target: is_em_apuracao_indice_de_referencia
+    type: boolean
+    missingValues: []
+    trueValues: ["Em Apuração"]
+    falseValues: [""]
+  - name: Data de Apuração
+    target: dt_apuracao
+    type: date
+    format: '%d/%m/%Y'
+  - name: Previsão para {{ period }}
+    target: previsao_para_ano0
+    type: number
+    decimalChar: '.'
+  - name: Em apuração? ({{ period }})
+    target: is_em_apuracao_ano0
+    type: boolean
+    missingValues: []
+    trueValues: ["Em Apuração"]
+    falseValues: [""]
+  - name: Previsão para {{ period + 1 }}
+    target: previsao_para_ano1
+    type: number
+    decimalChar: '.'
+  - name: Em apuração? ({{ period + 1 }})
+    target: is_em_apuracao_ano1
+    type: boolean
+    missingValues: []
+    trueValues: ["Em Apuração"]
+    falseValues: [""]
+  - name: Previsão para {{ period + 2 }}
+    target: previsao_para_ano2
+    type: number
+    decimalChar: '.'
+  - name: Em apuração? ({{ period + 2 }})
+    target: is_em_apuracao_ano2
+    type: boolean
+    missingValues: []
+    trueValues: ["Em Apuração"]
+    falseValues: [""]
+  - name: Previsão para {{ period + 3 }}
+    target: previsao_para_ano3
+    type: number
+    decimalChar: '.'
+  - name: Em apuração? ({{ period + 3 }})
+    target: is_em_apuracao_ano3
+    type: boolean
+    missingValues: []
+    trueValues: ["Em Apuração"]
+    falseValues: [""]
+  - name: Fonte
+    target: fonte
+    type: string
+  - name: Periodicidade
+    target: periodicidade
+    type: string
+  - name: Base Geográfica
+    target: base_geografica
+    type: string
+  - name: Fórmula de Cálculo
+    target: formula_de_calculo
+    type: string
+  - name: Justificativa do Status em apuração da(s) Previsão(es) do(s) Índice(s)
+    target: justificativa_status_apuracao_previsoes
+    type: string
+  - name: Justificativa do Status em apuração do Índice de Referência
+    target: justificativa_status_apuracao_indice_ref
+    type: string
+  - name: Data Alteração
+    target: updated_at
+    type: datetime
+    format: '%d/%m/%Y %H:%M:%S'
+  - name: Indicador Novo?
+    target: is_indicador_new
+    type: boolean
+  - name: Polaridade
+    target: polaridade
+    type: string
+primaryKey:
+  - Código do Programa
+  - Exclusão Lógica do Programa
+  - Indicador
+  - Exclusão Lógica do Indicador
+foreignKeys:
+  - fields:
+      - Código do Programa
+    reference:
+      fields:
+        - Código do Programa
+      resource: programas_planejamento

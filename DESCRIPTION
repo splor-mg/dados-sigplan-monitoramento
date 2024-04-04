@@ -1,0 +1,4 @@
+Package: sigplan-monitoramento-dados
+Imports:
+    renv
+Encoding: UTF-8

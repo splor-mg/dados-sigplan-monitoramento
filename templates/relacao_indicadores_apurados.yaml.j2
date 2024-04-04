@@ -1,0 +1,112 @@
+fields:
+  - name: Código do Programa
+    target: programa_cod
+    type: integer
+  - name: Nome do Programa
+    target: programa_nome
+    type: string
+  - name: Código da Unidade Orçamentária Responsável pelo Programa
+    target: uo_programa_cod
+    type: integer
+  - name: Unidade Orçamentária Responsável pelo Programa
+    target: uo_programa_nome
+    type: string
+  - name: Código do Órgão Responsável pelo Programa
+    target: orgao_programa_cod
+    type: integer
+  - name: Órgão Responsável pelo Programa
+    target: orgao_programa_nome
+    type: string
+  - name: Objetivo
+    target: 
+    type: string
+  - name: Código do Tipo de Programa
+    target: tipo_de_programa_cod
+    type: integer
+  - name: Tipo de Programa
+    type: string
+  - name: Código da Área Temática
+    target: area_tematica_cod
+    type: integer
+  - name: Área Temática
+    target: area_tematica_desc
+    type: string
+  - name: Código do Indicador
+    target: indicador_cod
+    type: integer
+  - name: Indicador
+    target: indicador
+    type: string
+  - name: Código da Unidade de Medida
+    target: unidade_de_medida_cod
+    type: integer
+  - name: Unidade de Medida
+    type: string
+  - name: Código da Base Geográfica
+    target: base_geografica_cod
+    type: integer
+  - name: Base Geográfica
+    type: string
+  - name: Código da Periodicidade
+    target: periodicidade_cod
+    type: integer
+  - name: Periodicidade
+    type: string
+  - name: Em apuração? (Índice de Referência)
+    target: is_em_apuracao_indice_referencia
+    type: boolean
+    missingValues: []
+    trueValues: ["SIM"]
+    falseValues: ["NÃO"]
+  - name: Data de Apuração (Índice de Referência)
+    target: dt_apuracao_indice_referencia
+    type: string
+  - name: Índice de Referência
+    type: number
+    decimalChar: ","
+  - name: Polaridade
+    type: string
+  - name: Previsão para {{ period }}
+    target: previsao_ano0
+    type: number
+    decimalChar: ","
+  - name: Apurado {{ period }}
+    target: apurado_ano0
+    type: number
+    decimalChar: ","
+  - name: Previsão para {{ period + 1 }}
+    target: previsao_ano1
+    type: number
+    decimalChar: ","
+  - name: Apurado {{ period + 1 }}
+    target: apurado_ano1
+    type: number
+    decimalChar: ","  
+    missingValues: ["NULL"]
+  - name: Previsão para {{ period + 2 }}
+    target: previsao_ano2
+    type: number
+    decimalChar: ","
+  - name: Apurado {{ period + 2 }}
+    target: apurado_ano2
+    type: number
+    decimalChar: ","
+    missingValues: ["NULL"]
+  - name: Previsão para {{ period + 3 }}
+    target: previsao_ano3
+    type: number
+    decimalChar: ","
+  - name: Apurado {{ period + 3 }}
+    target: apurado_ano3
+    type: number
+    decimalChar: ","
+    missingValues: ["NULL"]
+  - name: Fonte
+    type: string
+  - name: Fórmula de Cálculo
+    type: string
+  - name: Notas do Usuário
+    type: string
+  - name: ""
+    target: empty_column
+    type: any
