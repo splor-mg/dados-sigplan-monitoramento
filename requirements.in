@@ -1,3 +1,4 @@
 pip-tools
 frictionless
+html2text
 git+https://github.com/splor-mg/dpm.git@main
