@@ -6,8 +6,9 @@ EXT = txt
 
 RESOURCE_NAMES := $(shell $(PYTHON) main.py resources)
 OUTPUT_FILES := $(addsuffix .csv,$(addprefix data/,$(RESOURCE_NAMES)))
+SCHEMAS := $(addsuffix .yaml,$(addprefix schemas/,$(RESOURCE_NAMES)))
 
-all: extract validate transform build check
+all: extract describe validate transform build check
 
 %: requirements
 	@true
@@ -17,10 +18,12 @@ requirements:
 	@python scripts/requirements.py
 
 extract:
-	$(foreach resource_name, $(RESOURCE_NAMES),python main.py extract $(resource_name) &&) true
+	$(foreach resource_name, $(RESOURCE_NAMES),$(PYTHON) main.py extract $(resource_name) &&) true
 
-describe:
-	$(foreach resource_name, $(RESOURCE_NAMES),python main.py describe $(resource_name) &&) true
+describe: $(SCHEMAS)
+
+$(SCHEMAS): schemas/%.yaml: templates/%.yaml.j2 datapackage.yaml
+	$(PYTHON) main.py describe $*
 
 validate:
 	frictionless validate datapackage.yaml

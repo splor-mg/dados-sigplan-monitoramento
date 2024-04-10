@@ -1,0 +1,23 @@
+fields:
+  - name: Ano MONITORAMENTO
+    type: integer
+  - name: SETOR de Governo
+    type: string
+  - name: Código do Programa
+    type: integer
+  - name: Nome do Programa
+    type: string
+  - name: Código Da Unidade Orçamentária Responsavel Pelo Programa
+    type: integer
+  - name: Unidade Orçamentária Responsavel pelo Programa
+    type: string
+  - name: Objetivo do Programa
+    type: string
+  - name: Situacao atual 1 Semestre
+    type: string
+  - name: Situacao atual 2 Semestre
+    type: string
+  - name: RESULTADO
+    type: string
+  - name: field11
+    type: any

@@ -1,6 +1,6 @@
 name: sigplan-monitoramento-dados
 year: "2023"
-month: "2"
+month: "3"
 ppag: "5"
 
 resources:
@@ -14,6 +14,7 @@ resources:
       csv:
         delimiter: '|'
     schema: schemas/acoes_monitoramento.yaml
+
   - name: localizadores_monitoramento_todos
     title: Relatórios e Bases de Monitoramento - localizadores
     path: data-raw/localizadores_monitoramento_todos.txt
@@ -25,6 +26,7 @@ resources:
       csv:
         delimiter: '|'
     schema: schemas/localizadores_monitoramento_todos.yaml
+
   - name: relacao_indicadores_apurados
     title: Relatórios e Bases de Monitoramento - indicadores
     path: data-raw/relacao_indicadores_apurados.txt
@@ -36,3 +38,17 @@ resources:
       csv:
         delimiter: '|'
     schema: schemas/relacao_indicadores_apurados.yaml
+
+  - name: programa_monitoramento
+    title: Relatórios e Bases de Monitoramento - programas
+    path: data-raw/Programa_monitoramento.txt
+    api_url: https://www.sigplan.mg.gov.br/v3/Relatorios/base_Area_Resultado_Programa_monitoramento.asp?tipo_saida=2&mostraSQL=N&tipo_rel=5&periodo={month}&anoexercicio={year}{ppag}&campos_invest=N
+    download_url: https://www.sigplan.mg.gov.br/BasesTxt/programa_monitoramento.txt
+    format: csv
+    encoding: windows-1252
+    dialect:
+      csv:
+        delimiter: '|'
+    schema: schemas/programa_monitoramento.yaml
+
+

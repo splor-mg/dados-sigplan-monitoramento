@@ -1,0 +1,101 @@
+fields:
+  - name: Código do Programa
+    target: programa_cod
+    type: integer
+  - name: Nome do Programa
+    target: programa_desc
+    type: string
+  - name: Exclusão Lógica do Programa
+    target: is_deleted_programa
+    type: boolean
+    trueValues: ['Sim']
+    falseValues: ['Não']
+  - name: Programa Novo
+    target: is_new_programa
+    type: boolean
+    trueValues: ['Sim']
+    falseValues: ['Não']
+  - name: Código da Área Temática
+    target: area_tematica_cod
+    type: string
+  - name: Área Temática
+    target: area_tematica_desc
+    type: string
+  - name: Código do Objetivo Estratégico
+    target: objetivo_estrategico_cod
+    type: integer
+  - name: Objetivo Estratégico
+    target: objetivo_estrategico_desc
+    type: string
+  - name: Código da Diretriz Estratégica
+    target: diretriz_estrategica_cod
+    type: string
+  - name: Diretriz Estratégica
+    target: diretriz_estrategica_desc
+    type: string
+  - name: Justificativa de Inclusão ou Exclusão do Programa
+    target: justificativa_is_new_programa
+    type: string
+  - name: Código do Órgão Responsável pelo Programa
+    target: orgao_programa_cod
+    type: integer
+  - name: Órgão Responsável pelo Programa
+    target: orgao_programa_nome
+    type: string
+  - name: Código da Unidade Orçamentária Responsável pelo Programa
+    target: uo_programa_cod
+    type: integer
+  - name: Unidade Orçamentária Responsável pelo Programa
+    target: uo_programa_nome
+    type: string
+  - name: Objetivo
+    target: objetivo
+    type: string
+  - name: Justificativa
+    target: justificativa
+    type: string
+  - name: Tipo de Programa
+    target: tipo_de_programa
+    type: string
+  - name: Horizonte Temporal
+    target: horizonte_temporal
+    type: string
+  - name: Estratégia de Implementação
+    target: estrategia_de_implementacao
+    type: string
+  - name: Unidade Administrativa Responsável pelo Programa
+    target: ua_programa_nome
+    type: string
+  - name: Previsão Orçamentária {{ period }}
+    target: vr_meta_orcamentaria_ano0
+    type: number
+  - name: Previsão Orçamentária {{ period + 1 }}
+    target: vr_meta_orcamentaria_ano1
+    type: number
+  - name: Previsão Orçamentária {{ period + 2 }}
+    target: vr_meta_orcamentaria_ano2
+    type: number
+  - name: Previsão Orçamentária {{ period + 3 }}
+    target: vr_meta_orcamentaria_ano3
+    type: number
+  - name: Programa Transposto
+    target: is_programa_transposto
+    type: boolean
+    trueValues: ['Sim']
+    falseValues: ['Não']
+  - name: Causas
+    target: causas
+    type: string
+  - name: Título do Objetivo de Desenvolvimento Sustentável
+    target: ods_titulo
+    type: string
+  - name: Subtítulo do Objetivo de Desenvolvimento Sustentável
+    target: ods_subtitulo
+    type: string
+primaryKey:
+  - Código da Unidade Orçamentária Responsável pelo Programa
+  - Código do Programa
+  - Exclusão Lógica do Programa
+  - Código do Objetivo Estratégico
+  - Código da Diretriz Estratégica
+  - Título do Objetivo de Desenvolvimento Sustentável
