@@ -1,0 +1,811 @@
+{
+  "name": "sigplan-monitoramento-dados",
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "acoes_monitoramento",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/acoes_monitoramento.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:8470dc082a559e2f495d67950279ed8100da006cd8b64174c0b1e99672dc242c",
+      "bytes": 1128316,
+      "fields": 59,
+      "rows": 908,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano Monitoramento"
+          },
+          {
+            "name": "mes_inicial",
+            "type": "integer",
+            "source": "Mês Inicial"
+          },
+          {
+            "name": "mes_final",
+            "type": "integer",
+            "source": "Mês Final"
+          },
+          {
+            "name": "setor_governo",
+            "type": "string",
+            "source": "Setor de Governo"
+          },
+          {
+            "name": "programa_cod",
+            "type": "integer",
+            "source": "Código do Programa"
+          },
+          {
+            "name": "programa_desc",
+            "type": "string",
+            "source": "Nome do Programa"
+          },
+          {
+            "name": "uo_programa_cod",
+            "type": "integer",
+            "source": "Código da Unidade Orçamentária Responsável pelo Programa"
+          },
+          {
+            "name": "uo_programa_nome",
+            "type": "string",
+            "source": "Unidade Orçamentária Responsável pelo Programa"
+          },
+          {
+            "name": "uo_acao_cod",
+            "type": "integer",
+            "source": "Código da Unidade Orçamentária Responsável pela Ação"
+          },
+          {
+            "name": "uo_acao_nome",
+            "type": "string",
+            "source": "Unidade Orçamentária Responsável pela Ação"
+          },
+          {
+            "name": "area_tematica_cod",
+            "type": "integer",
+            "source": "Código da Área Temática"
+          },
+          {
+            "name": "area_tematica_desc",
+            "type": "string",
+            "source": "Área Temática"
+          },
+          {
+            "name": "funcao_cod",
+            "type": "integer",
+            "source": "Código da Função"
+          },
+          {
+            "name": "funcao_desc",
+            "type": "string",
+            "source": "Função"
+          },
+          {
+            "name": "subfuncao_cod",
+            "type": "integer",
+            "source": "Código da Subfunção"
+          },
+          {
+            "name": "subfuncao_desc",
+            "type": "string",
+            "source": "Subfunção"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer",
+            "source": "Código da Ação"
+          },
+          {
+            "name": "acao_desc",
+            "type": "string",
+            "source": "Título da Ação"
+          },
+          {
+            "name": "is_meta_cumulativa",
+            "type": "boolean",
+            "source": "Meta não cumulativa?"
+          },
+          {
+            "name": "identificador_tipo_acao_cod",
+            "type": "integer",
+            "source": "Código do Tipo de Ação"
+          },
+          {
+            "name": "identificador_tipo_acao_desc",
+            "type": "string",
+            "source": "Tipo de Ação"
+          },
+          {
+            "name": "acao_finalidade",
+            "type": "string",
+            "source": "Finalidade da Ação"
+          },
+          {
+            "name": "iag_cod",
+            "type": "integer",
+            "source": "Código do Identificador de Ação Governamental (IAG)"
+          },
+          {
+            "name": "iag_desc",
+            "type": "string",
+            "source": "Identificador de Ação Governamental (IAG)"
+          },
+          {
+            "name": "projeto_estrategico_cod",
+            "type": "integer",
+            "source": "Código do Projeto Estratégico"
+          },
+          {
+            "name": "projeto_estrategico_desc",
+            "type": "string",
+            "source": "Projeto Estratégico"
+          },
+          {
+            "name": "publico_alvo_cod",
+            "type": "integer",
+            "source": "Código do Público-alvo"
+          },
+          {
+            "name": "publico_alvo_desc",
+            "type": "string",
+            "source": "Público-alvo"
+          },
+          {
+            "name": "produto_cod",
+            "type": "integer",
+            "source": "Código do Produto"
+          },
+          {
+            "name": "produto_desc",
+            "type": "string",
+            "source": "Produto"
+          },
+          {
+            "name": "produto_unidade_medida_cod",
+            "type": "integer",
+            "source": "Código da Unidade de Medida do Produto"
+          },
+          {
+            "name": "produto_unidade_medida_desc",
+            "type": "string",
+            "source": "Unidade de Medida do Produto"
+          },
+          {
+            "name": "vlr_credito_inicial",
+            "type": "number",
+            "source": "Previsão Orçamentária 2023 (LOA)"
+          },
+          {
+            "name": "vlr_prog_inicial_periodo_ref",
+            "type": "number",
+            "source": "Orç. Programado Inicial de Jan a Fev"
+          },
+          {
+            "name": "vlr_prog_inicial_outras_despesas_jan",
+            "type": "number",
+            "source": "Prog. Inicial Outras Desp. Jan"
+          },
+          {
+            "name": "vlr_prog_inicial_outras_despesas_fev",
+            "type": "number",
+            "source": "Prog. Inicial Outras Desp. Fev"
+          },
+          {
+            "name": "vlr_prog_inicial_outras_despesas",
+            "type": "number",
+            "source": "Total Prog. Inicial Outras Desp."
+          },
+          {
+            "name": "vlr_prog_inicial_pessoal_auxilios_jan",
+            "type": "number",
+            "source": "Prog. Inicial Desp. Pessoal e Auxílios Jan"
+          },
+          {
+            "name": "vlr_prog_inicial_pessoal_auxilios_fev",
+            "type": "number",
+            "source": "Prog. Inicial Desp. Pessoal e Auxílios Fev"
+          },
+          {
+            "name": "vlr_prog_inicial_pessoal_auxilios",
+            "type": "number",
+            "source": "Total Prog. Inicial Desp. Pessoal e Auxílios"
+          },
+          {
+            "name": "vlr_despesa_realizada_jan",
+            "type": "number",
+            "source": "Desp. Realizada Jan"
+          },
+          {
+            "name": "vlr_despesa_realizada_fev",
+            "type": "number",
+            "source": "Desp. Realizada Fev"
+          },
+          {
+            "name": "vlr_credito_autorizado",
+            "type": "number",
+            "source": "Crédito Autorizado 2023 (LOA + Créditos)"
+          },
+          {
+            "name": "vlr_despesa_realizada",
+            "type": "number",
+            "source": "Despesa Realizada 2023"
+          },
+          {
+            "name": "vlr_previsao_fisica",
+            "type": "integer",
+            "source": "Previsão Física 2023"
+          },
+          {
+            "name": "vlr_prog_fisica_inicial_periodo_ref",
+            "type": "integer",
+            "source": "Fis Programado Inicial de Jan  a Fev"
+          },
+          {
+            "name": "vlr_meta_fisica_reprogramada",
+            "type": "integer",
+            "source": "Meta Física Reprogramada"
+          },
+          {
+            "name": "vlr_fisico_realizado_jan",
+            "type": "integer",
+            "source": "Fis Realizado Jan"
+          },
+          {
+            "name": "vlr_fisico_realizado_fev",
+            "type": "integer",
+            "source": "Fis Realizado Fev"
+          },
+          {
+            "name": "vlr_fisico_realizado",
+            "type": "integer",
+            "source": "Realização Física 2023"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_jan",
+            "type": "integer",
+            "source": "Pessoa Remunerada Jan"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_fev",
+            "type": "integer",
+            "source": "Pessoa Remunerada Fev"
+          },
+          {
+            "name": "vlr_realizacao_pessoa_remunerada",
+            "type": "integer",
+            "source": "Realização Pessoa Remunerada"
+          },
+          {
+            "name": "ultimo_mes_maior_execucao",
+            "type": "integer",
+            "source": "Último mês de maior execução"
+          },
+          {
+            "name": "is_acao_nao_regionalizada",
+            "type": "boolean",
+            "source": "Ação Não Regionalizada?"
+          },
+          {
+            "name": "justificativa_nao_regionalizacao",
+            "type": "string",
+            "source": "Justificativa da Não Regionalização"
+          },
+          {
+            "name": "objetivo",
+            "type": "string",
+            "source": "Objetivo"
+          },
+          {
+            "name": "is_acao_transposta_durante_exercicio",
+            "type": "string",
+            "source": "Ação Transposta Durante Exercício"
+          },
+          {
+            "name": "empty_column",
+            "type": "any",
+            "source": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "localizadores_monitoramento_todos",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/localizadores_monitoramento_todos.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:5add614b4e4e52812b8415e0f9a64d5dc12bff91aa57b0111b90eac98d233ae5",
+      "bytes": 56310003,
+      "fields": 56,
+      "rows": 59413,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano Monitoramento"
+          },
+          {
+            "name": "mes_inicial",
+            "type": "integer",
+            "source": "Mês Inicial"
+          },
+          {
+            "name": "mes_final",
+            "type": "integer",
+            "source": "Mês Final"
+          },
+          {
+            "name": "setor_governo",
+            "type": "string",
+            "source": "Setor de Governo"
+          },
+          {
+            "name": "programa_cod",
+            "type": "integer",
+            "source": "Código do Programa"
+          },
+          {
+            "name": "programa_desc",
+            "type": "string",
+            "source": "Nome do Programa"
+          },
+          {
+            "name": "uo_programa_cod",
+            "type": "integer",
+            "source": "Código da Unidade Orçamentária Responsável pelo Programa"
+          },
+          {
+            "name": "uo_programa_nome",
+            "type": "string",
+            "source": "Unidade Orçamentária Responsável pelo Programa"
+          },
+          {
+            "name": "uo_acao_cod",
+            "type": "integer",
+            "source": "Código da Unidade Orçamentária Responsável pela Ação"
+          },
+          {
+            "name": "uo_acao_nome",
+            "type": "string",
+            "source": "Unidade Orçamentária Responsável pela Ação"
+          },
+          {
+            "name": "area_tematica_cod",
+            "type": "integer",
+            "source": "Código da Área Temática"
+          },
+          {
+            "name": "area_tematica_desc",
+            "type": "string",
+            "source": "Área Temática"
+          },
+          {
+            "name": "funcao_cod",
+            "type": "integer",
+            "source": "Código da Função"
+          },
+          {
+            "name": "funcao_desc",
+            "type": "string",
+            "source": "Função"
+          },
+          {
+            "name": "subfuncao_cod",
+            "type": "integer",
+            "source": "Código da Subfunção"
+          },
+          {
+            "name": "subfuncao_desc",
+            "type": "string",
+            "source": "Subfunção"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer",
+            "source": "Código da Ação"
+          },
+          {
+            "name": "acao_desc",
+            "type": "string",
+            "source": "Título da Ação"
+          },
+          {
+            "name": "is_meta_cumulativa",
+            "type": "boolean",
+            "source": "Meta não cumulativa?"
+          },
+          {
+            "name": "identificador_tipo_acao_cod",
+            "type": "integer",
+            "source": "Código do Tipo de Ação"
+          },
+          {
+            "name": "identificador_tipo_acao_desc",
+            "type": "string",
+            "source": "Tipo de Ação"
+          },
+          {
+            "name": "acao_finalidade",
+            "type": "string",
+            "source": "Finalidade da Ação"
+          },
+          {
+            "name": "iag_cod",
+            "type": "integer",
+            "source": "Código do Identificador de Ação Governamental (IAG)"
+          },
+          {
+            "name": "iag_desc",
+            "type": "string",
+            "source": "Identificador de Ação Governamental (IAG)"
+          },
+          {
+            "name": "projeto_estrategico_cod",
+            "type": "any",
+            "source": "Código do Projeto Estratégico"
+          },
+          {
+            "name": "projeto_estrategico_desc",
+            "type": "any",
+            "source": "Projeto Estratégico"
+          },
+          {
+            "name": "publico_alvo_cod",
+            "type": "integer",
+            "source": "Código do Público-alvo"
+          },
+          {
+            "name": "publico_alvo_desc",
+            "type": "string",
+            "source": "Público-alvo"
+          },
+          {
+            "name": "produto_cod",
+            "type": "integer",
+            "source": "Código do Produto"
+          },
+          {
+            "name": "produto_desc",
+            "type": "string",
+            "source": "Produto"
+          },
+          {
+            "name": "produto_unidade_medida_cod",
+            "type": "integer",
+            "source": "Código da Unidade de Medida do Produto"
+          },
+          {
+            "name": "produto_unidade_medida_desc",
+            "type": "string",
+            "source": "Unidade de Medida do Produto"
+          },
+          {
+            "name": "regiao_geografica_intermediaria_cod",
+            "type": "integer",
+            "source": "Código da Região Geográfica Intermediária"
+          },
+          {
+            "name": "regiao_geografica_intermediaria_desc",
+            "type": "string",
+            "source": "Região Geográfica Intermediária"
+          },
+          {
+            "name": "municipio_cod_ibge",
+            "type": "integer",
+            "source": "Código do Município IBGE"
+          },
+          {
+            "name": "municipio_cod_sigplan",
+            "type": "integer",
+            "source": "Código do Município Sigplan"
+          },
+          {
+            "name": "municipio_desc",
+            "type": "string",
+            "source": "Município"
+          },
+          {
+            "name": "vlr_despesa_realizada_investimento_jan",
+            "type": "number",
+            "source": "Desp. Realizada Investimento Jan"
+          },
+          {
+            "name": "vlr_despesa_realizada_outros_jan",
+            "type": "number",
+            "source": "Desp. Realizada Outros Jan"
+          },
+          {
+            "name": "vlr_despesa_realizada_pessoal_auxilios_jan",
+            "type": "number",
+            "source": "Desp. Realizada Pessoal e Auxílios Jan"
+          },
+          {
+            "name": "vlr_despesa_realizada_jan",
+            "type": "number",
+            "source": "Desp. Realizada Jan"
+          },
+          {
+            "name": "vlr_despesa_realizada_investimento_fev",
+            "type": "number",
+            "source": "Desp. Realizada Investimento Fev"
+          },
+          {
+            "name": "vlr_despesa_realizada_outros_fev",
+            "type": "number",
+            "source": "Desp. Realizada Outros Fev"
+          },
+          {
+            "name": "vlr_despesa_realizada_pessoal_auxilios_fev",
+            "type": "number",
+            "source": "Desp. Realizada Pessoal e Auxílios Fev"
+          },
+          {
+            "name": "vlr_despesa_realizada_fev",
+            "type": "number",
+            "source": "Desp. Realizada Fev"
+          },
+          {
+            "name": "vlr_despesa_realizada_investimento",
+            "type": "number",
+            "source": "Despesa Realizada Investimento 2023"
+          },
+          {
+            "name": "vlr_despesa_realizada_outros",
+            "type": "number",
+            "source": "Despesa Realizada Outros 2023"
+          },
+          {
+            "name": "vlr_despesa_realizada_pessoal_auxilios",
+            "type": "number",
+            "source": "Despesa Realizada Pessoal e Auxílios 2023"
+          },
+          {
+            "name": "vlr_despesa_realizada",
+            "type": "string",
+            "source": "Despesa Realizada Total 2023"
+          },
+          {
+            "name": "vlr_previsao_fisica_inicial",
+            "type": "integer",
+            "source": "Previsão Física Inicial"
+          },
+          {
+            "name": "vlr_fisico_realizado_jan",
+            "type": "integer",
+            "source": "Fis Realizado Jan"
+          },
+          {
+            "name": "vlr_fisico_realizado_fev",
+            "type": "integer",
+            "source": "Fis Realizado Fev"
+          },
+          {
+            "name": "vlr_fisico_realizado",
+            "type": "integer",
+            "source": "Realização Física 2023"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_jan",
+            "type": "integer",
+            "source": "Pessoa Remunerada Jan"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_fev",
+            "type": "integer",
+            "source": "Pessoa Remunerada Fev"
+          },
+          {
+            "name": "empty_column",
+            "type": "any",
+            "source": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "relacao_indicadores_apurados",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/relacao_indicadores_apurados.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:f3809658c3fe81271f5a0537f3df31af091f1e8e5643ff653dc470fb5cd1e64c",
+      "bytes": 390200,
+      "fields": 35,
+      "rows": 303,
+      "schema": {
+        "fields": [
+          {
+            "name": "programa_cod",
+            "type": "integer",
+            "source": "Código do Programa"
+          },
+          {
+            "name": "programa_nome",
+            "type": "string",
+            "source": "Nome do Programa"
+          },
+          {
+            "name": "uo_programa_cod",
+            "type": "integer",
+            "source": "Código da Unidade Orçamentária Responsável pelo Programa"
+          },
+          {
+            "name": "uo_programa_nome",
+            "type": "string",
+            "source": "Unidade Orçamentária Responsável pelo Programa"
+          },
+          {
+            "name": "orgao_programa_cod",
+            "type": "integer",
+            "source": "Código do Órgão Responsável pelo Programa"
+          },
+          {
+            "name": "orgao_programa_nome",
+            "type": "string",
+            "source": "Órgão Responsável pelo Programa"
+          },
+          {
+            "name": "objetivo",
+            "type": "string",
+            "source": "Objetivo"
+          },
+          {
+            "name": "tipo_de_programa_cod",
+            "type": "integer",
+            "source": "Código do Tipo de Programa"
+          },
+          {
+            "name": "tipo_de_programa",
+            "type": "string",
+            "source": "Tipo de Programa"
+          },
+          {
+            "name": "area_tematica_cod",
+            "type": "integer",
+            "source": "Código da Área Temática"
+          },
+          {
+            "name": "area_tematica_desc",
+            "type": "string",
+            "source": "Área Temática"
+          },
+          {
+            "name": "indicador_cod",
+            "type": "integer",
+            "source": "Código do Indicador"
+          },
+          {
+            "name": "indicador",
+            "type": "string",
+            "source": "Indicador"
+          },
+          {
+            "name": "unidade_de_medida_cod",
+            "type": "integer",
+            "source": "Código da Unidade de Medida"
+          },
+          {
+            "name": "unidade_de_medida",
+            "type": "string",
+            "source": "Unidade de Medida"
+          },
+          {
+            "name": "base_geografica_cod",
+            "type": "integer",
+            "source": "Código da Base Geográfica"
+          },
+          {
+            "name": "base_geografica",
+            "type": "string",
+            "source": "Base Geográfica"
+          },
+          {
+            "name": "periodicidade_cod",
+            "type": "integer",
+            "source": "Código da Periodicidade"
+          },
+          {
+            "name": "periodicidade",
+            "type": "string",
+            "source": "Periodicidade"
+          },
+          {
+            "name": "is_em_apuracao_indice_referencia",
+            "type": "boolean",
+            "source": "Em apuração? (Índice de Referência)"
+          },
+          {
+            "name": "dt_apuracao_indice_referencia",
+            "type": "string",
+            "source": "Data de Apuração (Índice de Referência)"
+          },
+          {
+            "name": "indice_de_referencia",
+            "type": "number",
+            "source": "Índice de Referência"
+          },
+          {
+            "name": "polaridade",
+            "type": "string",
+            "source": "Polaridade"
+          },
+          {
+            "name": "previsao_ano0",
+            "type": "number",
+            "source": "Previsão para 2023"
+          },
+          {
+            "name": "apurado_ano0",
+            "type": "number",
+            "source": "Apurado 2023"
+          },
+          {
+            "name": "previsao_ano1",
+            "type": "number",
+            "source": "Previsão para 2024"
+          },
+          {
+            "name": "apurado_ano1",
+            "type": "number",
+            "source": "Apurado 2024"
+          },
+          {
+            "name": "previsao_ano2",
+            "type": "number",
+            "source": "Previsão para 2025"
+          },
+          {
+            "name": "apurado_ano2",
+            "type": "number",
+            "source": "Apurado 2025"
+          },
+          {
+            "name": "previsao_ano3",
+            "type": "number",
+            "source": "Previsão para 2026"
+          },
+          {
+            "name": "apurado_ano3",
+            "type": "number",
+            "source": "Apurado 2026"
+          },
+          {
+            "name": "fonte",
+            "type": "string",
+            "source": "Fonte"
+          },
+          {
+            "name": "formula_de_calculo",
+            "type": "string",
+            "source": "Fórmula de Cálculo"
+          },
+          {
+            "name": "notas_do_usuario",
+            "type": "string",
+            "source": "Notas do Usuário"
+          },
+          {
+            "name": "empty_column",
+            "type": "any",
+            "source": ""
+          }
+        ]
+      }
+    }
+  ],
+  "updated_at": "2024-04-10T12:33:10"
+}
