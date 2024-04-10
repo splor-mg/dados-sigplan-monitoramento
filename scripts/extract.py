@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from frictionless import Package
 import requests
 import logging
@@ -14,10 +16,6 @@ def extract_resource(resource_name: str, descriptor: str = 'datapackage.yaml'):
     package = Package(descriptor)
     resource = package.get_resource(resource_name)
 
-    # 22:04:01 - Geração de Arquivos Texto, aguarde esse processamento pode ser um pouco demorado!
-    # ATENÇÃO: Ao abrir o arquivo no Excel use o caracter | como separador de campos
-    # 22:05:14 - Arquivo : programas_planejamento.txt gerado com sucesso!!!
-    # Tempo de Processamento 00:01:13
     logger.info(f"Extracting resource {resource_name}")
 
     url_params = {
@@ -38,6 +36,8 @@ def extract_resource(resource_name: str, descriptor: str = 'datapackage.yaml'):
     res.raise_for_status()
     res.raw.decode_content = True
 
+    Path(resource.path).parent.mkdir(parents=True, exist_ok=True)
     with open(resource.path, 'wb') as file:
         shutil.copyfileobj(res.raw, file)
+
 

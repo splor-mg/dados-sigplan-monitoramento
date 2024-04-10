@@ -6,7 +6,7 @@ ppag: "5"
 resources:
   - name: acoes_monitoramento
     path: data-raw/acoes_monitoramento.txt
-    api_url: https://www.sigplan.mg.gov.br/v3/Relatorios/base_acoes_monitoramento.asp?tipo_saida=2&mostraSQL=N&periodo={period}&anoexercicio={year}{ppag}&campos_invest=N
+    api_url: https://www.sigplan.mg.gov.br/v3/Relatorios/base_acoes_monitoramento.asp?tipo_saida=2&mostraSQL=N&periodo={month}&anoexercicio={year}{ppag}&campos_invest=N
     download_url: https://www.sigplan.mg.gov.br/BasesTxt/acoes_monitoramento.txt
     format: csv
     encoding: windows-1252
@@ -17,7 +17,7 @@ resources:
   - name: localizadores_monitoramento_todos
     title: Relatórios e Bases de Monitoramento - localizadores
     path: data-raw/localizadores_monitoramento_todos.txt
-    api_url: https://www.sigplan.mg.gov.br/v3/Relatorios/base_localizadores_monitoramento.asp?tipo_saida=2&mostraSQL=N&tipo_rel=5&periodo={period}&anoexercicio={year}{ppag}&campos_invest=N
+    api_url: https://www.sigplan.mg.gov.br/v3/Relatorios/base_localizadores_monitoramento.asp?tipo_saida=2&mostraSQL=N&tipo_rel=5&periodo={month}&anoexercicio={year}{ppag}&campos_invest=N
     download_url: https://www.sigplan.mg.gov.br/BasesTxt/localizadores_monitoramento_todos.txt
     format: csv
     encoding: windows-1252
@@ -28,7 +28,7 @@ resources:
   - name: relacao_indicadores_apurados
     title: Relatórios e Bases de Monitoramento - indicadores
     path: data-raw/relacao_indicadores_apurados.txt
-    api_url: https://www.sigplan.mg.gov.br/v3/Relatorios/base_indicadoresapurados_monitoramento.asp?tipo_saida=2&mostraSQL=N&periodo={period}&anoexercicio={year}{ppag}&campos_invest=N
+    api_url: https://www.sigplan.mg.gov.br/v3/Relatorios/base_indicadoresapurados_monitoramento.asp?tipo_saida=2&mostraSQL=N&periodo={month}&anoexercicio={year}{ppag}&campos_invest=N
     download_url: https://www.sigplan.mg.gov.br/BasesTxt/RELACAO_INDICADORES_APURADOS.txt
     format: csv
     encoding: windows-1252
