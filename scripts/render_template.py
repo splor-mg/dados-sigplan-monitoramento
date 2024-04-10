@@ -27,4 +27,3 @@ def render_schema_monitoramento(resource_name: str, descriptor: str = 'datapacka
         fs.write(result)
 
 
-render_schema_monitoramento("acoes_monitoramento")
