@@ -144,6 +144,22 @@ fields:
     target: vlr_despesa_realizada_fev
     type: number
     decimalChar: ","
+  - name: Desp. Realizada Investimento Mar
+    target: vlr_despesa_realizada_investimento_mar
+    type: number
+    decimalChar: ","
+  - name: Desp. Realizada Outros Mar
+    target: vlr_despesa_realizada_outros_mar
+    type: number
+    decimalChar: ","
+  - name: Desp. Realizada Pessoal e Auxílios Mar
+    target: vlr_despesa_realizada_pessoal_auxilios_mar
+    type: number
+    decimalChar: ","
+  - name: Desp. Realizada Mar
+    target: vlr_despesa_realizada_mar
+    type: number
+    decimalChar: ","
   - name: Despesa Realizada Investimento 2023
     target: vlr_despesa_realizada_investimento
     type: number
@@ -168,6 +184,9 @@ fields:
   - name: Fis Realizado Fev
     target: vlr_fisico_realizado_fev
     type: integer
+  - name: Fis Realizado Mar
+    target: vlr_fisico_realizado_mar
+    type: integer
   - name: Realização Física 2023
     target: vlr_fisico_realizado
     type: integer
@@ -177,6 +196,16 @@ fields:
   - name: Pessoa Remunerada Fev
     target: vlr_pessoa_remunerada_fev
     type: integer
+  - name: Pessoa Remunerada Mar
+    target: vlr_pessoa_remunerada_mar
+    type: integer
   - name: ""
     target: empty_column
     type: any
+primaryKey:
+  - Ano Monitoramento
+  - Código do Programa
+  - Código da Ação
+  - Código da Unidade Orçamentária Responsável pela Ação
+  - Código da Unidade Orçamentária Responsável pelo Programa
+  - Código do Município IBGE

@@ -41,7 +41,7 @@ resources:
 
   - name: programa_monitoramento
     title: Relatórios e Bases de Monitoramento - programas
-    path: data-raw/Programa_monitoramento.txt
+    path: data-raw/programa_monitoramento.txt
     api_url: https://www.sigplan.mg.gov.br/v3/Relatorios/base_Area_Resultado_Programa_monitoramento.asp?tipo_saida=2&mostraSQL=N&tipo_rel=5&periodo={month}&anoexercicio={year}{ppag}&campos_invest=N
     download_url: https://www.sigplan.mg.gov.br/BasesTxt/programa_monitoramento.txt
     format: csv

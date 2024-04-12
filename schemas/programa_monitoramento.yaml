@@ -21,3 +21,6 @@ fields:
     type: string
   - name: field11
     type: any
+primaryKey:
+  - Ano MONITORAMENTO
+  - Código do Programa

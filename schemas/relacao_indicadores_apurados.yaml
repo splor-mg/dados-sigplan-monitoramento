@@ -110,3 +110,9 @@ fields:
   - name: ""
     target: empty_column
     type: any
+primaryKey:
+  - Código do Programa
+  - Código da Unidade Orçamentária Responsável pelo Programa
+  - Código do Órgão Responsável pelo Programa
+  - Código do Indicador
+  - Código da Área Temática

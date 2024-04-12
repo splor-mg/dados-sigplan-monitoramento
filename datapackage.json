@@ -11,9 +11,9 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:8470dc082a559e2f495d67950279ed8100da006cd8b64174c0b1e99672dc242c",
-      "bytes": 1128316,
-      "fields": 59,
+      "hash": "sha256:766e89f142c751dca19eeeb0203e47ed5902048718e0a015129ad77091d89e6c",
+      "bytes": 1152917,
+      "fields": 64,
       "rows": 908,
       "schema": {
         "fields": [
@@ -185,7 +185,7 @@
           {
             "name": "vlr_prog_inicial_periodo_ref",
             "type": "number",
-            "source": "Orç. Programado Inicial de Jan a Fev"
+            "source": "Orç. Programado Inicial de Jan a Mar"
           },
           {
             "name": "vlr_prog_inicial_outras_despesas_jan",
@@ -196,6 +196,11 @@
             "name": "vlr_prog_inicial_outras_despesas_fev",
             "type": "number",
             "source": "Prog. Inicial Outras Desp. Fev"
+          },
+          {
+            "name": "vlr_prog_inicial_outras_despesas_mar",
+            "type": "number",
+            "source": "Prog. Inicial Outras Desp. Mar"
           },
           {
             "name": "vlr_prog_inicial_outras_despesas",
@@ -213,6 +218,11 @@
             "source": "Prog. Inicial Desp. Pessoal e Auxílios Fev"
           },
           {
+            "name": "vlr_prog_inicial_pessoal_auxilios_mar",
+            "type": "number",
+            "source": "Prog. Inicial Desp. Pessoal e Auxílios Mar"
+          },
+          {
             "name": "vlr_prog_inicial_pessoal_auxilios",
             "type": "number",
             "source": "Total Prog. Inicial Desp. Pessoal e Auxílios"
@@ -226,6 +236,11 @@
             "name": "vlr_despesa_realizada_fev",
             "type": "number",
             "source": "Desp. Realizada Fev"
+          },
+          {
+            "name": "vlr_despesa_realizada_mar",
+            "type": "number",
+            "source": "Desp. Realizada Mar"
           },
           {
             "name": "vlr_credito_autorizado",
@@ -245,7 +260,7 @@
           {
             "name": "vlr_prog_fisica_inicial_periodo_ref",
             "type": "integer",
-            "source": "Fis Programado Inicial de Jan  a Fev"
+            "source": "Fis Programado Inicial de Jan  a Mar"
           },
           {
             "name": "vlr_meta_fisica_reprogramada",
@@ -263,6 +278,11 @@
             "source": "Fis Realizado Fev"
           },
           {
+            "name": "vlr_fisico_realizado_mar",
+            "type": "integer",
+            "source": "Fis Realizado Mar"
+          },
+          {
             "name": "vlr_fisico_realizado",
             "type": "integer",
             "source": "Realização Física 2023"
@@ -276,6 +296,11 @@
             "name": "vlr_pessoa_remunerada_fev",
             "type": "integer",
             "source": "Pessoa Remunerada Fev"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_mar",
+            "type": "integer",
+            "source": "Pessoa Remunerada Mar"
           },
           {
             "name": "vlr_realizacao_pessoa_remunerada",
@@ -324,10 +349,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:5add614b4e4e52812b8415e0f9a64d5dc12bff91aa57b0111b90eac98d233ae5",
-      "bytes": 56310003,
-      "fields": 56,
-      "rows": 59413,
+      "hash": "sha256:793086f11e844954dc6fe8174fc2272fdadef702b8555a9df8ec535a98a43a9d",
+      "bytes": 58963777,
+      "fields": 62,
+      "rows": 60832,
       "schema": {
         "fields": [
           {
@@ -556,6 +581,26 @@
             "source": "Desp. Realizada Fev"
           },
           {
+            "name": "vlr_despesa_realizada_investimento_mar",
+            "type": "number",
+            "source": "Desp. Realizada Investimento Mar"
+          },
+          {
+            "name": "vlr_despesa_realizada_outros_mar",
+            "type": "number",
+            "source": "Desp. Realizada Outros Mar"
+          },
+          {
+            "name": "vlr_despesa_realizada_pessoal_auxilios_mar",
+            "type": "number",
+            "source": "Desp. Realizada Pessoal e Auxílios Mar"
+          },
+          {
+            "name": "vlr_despesa_realizada_mar",
+            "type": "number",
+            "source": "Desp. Realizada Mar"
+          },
+          {
             "name": "vlr_despesa_realizada_investimento",
             "type": "number",
             "source": "Despesa Realizada Investimento 2023"
@@ -591,6 +636,11 @@
             "source": "Fis Realizado Fev"
           },
           {
+            "name": "vlr_fisico_realizado_mar",
+            "type": "integer",
+            "source": "Fis Realizado Mar"
+          },
+          {
             "name": "vlr_fisico_realizado",
             "type": "integer",
             "source": "Realização Física 2023"
@@ -604,6 +654,11 @@
             "name": "vlr_pessoa_remunerada_fev",
             "type": "integer",
             "source": "Pessoa Remunerada Fev"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_mar",
+            "type": "integer",
+            "source": "Pessoa Remunerada Mar"
           },
           {
             "name": "empty_column",
@@ -805,7 +860,80 @@
           }
         ]
       }
+    },
+    {
+      "name": "programa_monitoramento",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/programa_monitoramento.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:fd6d0c4e16cb8f044402e0ad3edef38c394c28aa66990bd209009c48a343cc4c",
+      "bytes": 417926,
+      "fields": 11,
+      "rows": 164,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano_monitoramento",
+            "type": "integer",
+            "source": "Ano MONITORAMENTO"
+          },
+          {
+            "name": "setor_de_governo",
+            "type": "string",
+            "source": "SETOR de Governo"
+          },
+          {
+            "name": "codigo_do_programa",
+            "type": "integer",
+            "source": "Código do Programa"
+          },
+          {
+            "name": "nome_do_programa",
+            "type": "string",
+            "source": "Nome do Programa"
+          },
+          {
+            "name": "codigo_da_unidade_orcamentaria_responsavel_pelo_programa",
+            "type": "integer",
+            "source": "Código Da Unidade Orçamentária Responsavel Pelo Programa"
+          },
+          {
+            "name": "unidade_orcamentaria_responsavel_pelo_programa",
+            "type": "string",
+            "source": "Unidade Orçamentária Responsavel pelo Programa"
+          },
+          {
+            "name": "objetivo_do_programa",
+            "type": "string",
+            "source": "Objetivo do Programa"
+          },
+          {
+            "name": "situacao_atual_1_semestre",
+            "type": "string",
+            "source": "Situacao atual 1 Semestre"
+          },
+          {
+            "name": "situacao_atual_2_semestre",
+            "type": "string",
+            "source": "Situacao atual 2 Semestre"
+          },
+          {
+            "name": "resultado",
+            "type": "string",
+            "source": "RESULTADO"
+          },
+          {
+            "name": "field11",
+            "type": "any",
+            "source": "field11"
+          }
+        ]
+      }
     }
   ],
-  "updated_at": "2024-04-10T12:33:10"
+  "updated_at": "2024-04-11T17:58:32"
 }

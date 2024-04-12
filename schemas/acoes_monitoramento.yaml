@@ -101,7 +101,7 @@ fields:
     target: vlr_credito_inicial
     type: number
     decimalChar: ","
-  - name: Orç. Programado Inicial de Jan a Fev
+  - name: Orç. Programado Inicial de Jan a Mar
     target: vlr_prog_inicial_periodo_ref
     type: number
     decimalChar: ","
@@ -111,6 +111,10 @@ fields:
     decimalChar: ","
   - name: Prog. Inicial Outras Desp. Fev
     target: vlr_prog_inicial_outras_despesas_fev
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Outras Desp. Mar
+    target: vlr_prog_inicial_outras_despesas_mar
     type: number
     decimalChar: ","
   - name: Total Prog. Inicial Outras Desp.
@@ -125,6 +129,10 @@ fields:
     target: vlr_prog_inicial_pessoal_auxilios_fev
     type: number
     decimalChar: ","
+  - name: Prog. Inicial Desp. Pessoal e Auxílios Mar
+    target: vlr_prog_inicial_pessoal_auxilios_mar
+    type: number
+    decimalChar: ","
   - name: Total Prog. Inicial Desp. Pessoal e Auxílios
     target: vlr_prog_inicial_pessoal_auxilios
     type: number
@@ -135,6 +143,10 @@ fields:
     decimalChar: ","
   - name: Desp. Realizada Fev
     target: vlr_despesa_realizada_fev
+    type: number
+    decimalChar: ","
+  - name: Desp. Realizada Mar
+    target: vlr_despesa_realizada_mar
     type: number
     decimalChar: ","
   - name: Crédito Autorizado 2023 (LOA + Créditos)
@@ -148,7 +160,7 @@ fields:
   - name: Previsão Física 2023
     target: vlr_previsao_fisica
     type: integer
-  - name: Fis Programado Inicial de Jan  a Fev
+  - name: Fis Programado Inicial de Jan  a Mar
     target: vlr_prog_fisica_inicial_periodo_ref
     type: integer
   - name: Meta Física Reprogramada
@@ -160,6 +172,9 @@ fields:
   - name: Fis Realizado Fev
     target: vlr_fisico_realizado_fev
     type: integer
+  - name: Fis Realizado Mar
+    target: vlr_fisico_realizado_mar
+    type: integer
   - name: Realização Física 2023
     target: vlr_fisico_realizado
     type: integer
@@ -168,6 +183,9 @@ fields:
     type: integer
   - name: Pessoa Remunerada Fev
     target: vlr_pessoa_remunerada_fev
+    type: integer
+  - name: Pessoa Remunerada Mar
+    target: vlr_pessoa_remunerada_mar
     type: integer
   - name: Realização Pessoa Remunerada
     target: vlr_realizacao_pessoa_remunerada
@@ -192,3 +210,9 @@ fields:
   - name: ""
     target: empty_column
     type: any
+primaryKey:
+  - Ano Monitoramento
+  - Código do Programa
+  - Código da Ação
+  - Código da Unidade Orçamentária Responsável pela Ação
+  - Código da Unidade Orçamentária Responsável pelo Programa
