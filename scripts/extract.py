@@ -1,5 +1,4 @@
 from pathlib import Path
-
 from frictionless import Package
 import requests
 import logging
