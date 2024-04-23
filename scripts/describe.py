@@ -2,24 +2,21 @@ from frictionless import Package
 from jinja2 import Environment, FileSystemLoader
 import logging
 
-# todo logging messages
 logger = logging.getLogger(__name__)
 
-def render_schema_monitoramento(resource_name: str, descriptor: str = 'datapackage.yaml'):
+def render_schema(resource_name: str, descriptor: str = 'datapackage.yaml'):
     """
     Render table schema of monitoramento datasets
 
-    >>> render_schema_monitoramento("monitoramento", 'datapackage.yaml' )
+    >>> render_schema("resource_name", 'datapackage.yaml' )
     """
     package = Package(descriptor)
-    resource = package.get_resource(resource_name)
 
     month = int(package.custom["month"])
     year = int(package.custom["year"])
     months = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
 
-    logger.info(f"Rendering schema {resource_name}.yaml. Year {year} from {months[0]} to {months[month-1]}")
-
+    logger.info(f"Rendering schema {resource_name}.yaml for {months[0]}/{year}-{months[month-1]}/{year}")
 
     env = Environment(loader=FileSystemLoader("templates"),
                       trim_blocks=True,
