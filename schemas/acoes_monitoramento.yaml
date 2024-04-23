@@ -101,7 +101,7 @@ fields:
     target: vlr_credito_inicial
     type: number
     decimalChar: ","
-  - name: Orç. Programado Inicial de Jan a Mar
+  - name: Orç. Programado Inicial de Jan a Dez
     target: vlr_prog_inicial_periodo_ref
     type: number
     decimalChar: ","
@@ -115,6 +115,42 @@ fields:
     decimalChar: ","
   - name: Prog. Inicial Outras Desp. Mar
     target: vlr_prog_inicial_outras_despesas_mar
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Outras Desp. Abr
+    target: vlr_prog_inicial_outras_despesas_abr
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Outras Desp. Mai
+    target: vlr_prog_inicial_outras_despesas_mai
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Outras Desp. Jun
+    target: vlr_prog_inicial_outras_despesas_jun
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Outras Desp. Jul
+    target: vlr_prog_inicial_outras_despesas_jul
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Outras Desp. Ago
+    target: vlr_prog_inicial_outras_despesas_ago
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Outras Desp. Set
+    target: vlr_prog_inicial_outras_despesas_set
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Outras Desp. Out
+    target: vlr_prog_inicial_outras_despesas_out
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Outras Desp. Nov
+    target: vlr_prog_inicial_outras_despesas_nov
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Outras Desp. Dez
+    target: vlr_prog_inicial_outras_despesas_dez
     type: number
     decimalChar: ","
   - name: Total Prog. Inicial Outras Desp.
@@ -133,6 +169,42 @@ fields:
     target: vlr_prog_inicial_pessoal_auxilios_mar
     type: number
     decimalChar: ","
+  - name: Prog. Inicial Desp. Pessoal e Auxílios Abr
+    target: vlr_prog_inicial_pessoal_auxilios_abr
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Desp. Pessoal e Auxílios Mai
+    target: vlr_prog_inicial_pessoal_auxilios_mai
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Desp. Pessoal e Auxílios Jun
+    target: vlr_prog_inicial_pessoal_auxilios_jun
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Desp. Pessoal e Auxílios Jul
+    target: vlr_prog_inicial_pessoal_auxilios_jul
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Desp. Pessoal e Auxílios Ago
+    target: vlr_prog_inicial_pessoal_auxilios_ago
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Desp. Pessoal e Auxílios Set
+    target: vlr_prog_inicial_pessoal_auxilios_set
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Desp. Pessoal e Auxílios Out
+    target: vlr_prog_inicial_pessoal_auxilios_out
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Desp. Pessoal e Auxílios Nov
+    target: vlr_prog_inicial_pessoal_auxilios_nov
+    type: number
+    decimalChar: ","
+  - name: Prog. Inicial Desp. Pessoal e Auxílios Dez
+    target: vlr_prog_inicial_pessoal_auxilios_dez
+    type: number
+    decimalChar: ","
   - name: Total Prog. Inicial Desp. Pessoal e Auxílios
     target: vlr_prog_inicial_pessoal_auxilios
     type: number
@@ -149,6 +221,42 @@ fields:
     target: vlr_despesa_realizada_mar
     type: number
     decimalChar: ","
+  - name: Desp. Realizada Abr
+    target: vlr_despesa_realizada_abr
+    type: number
+    decimalChar: ","
+  - name: Desp. Realizada Mai
+    target: vlr_despesa_realizada_mai
+    type: number
+    decimalChar: ","
+  - name: Desp. Realizada Jun
+    target: vlr_despesa_realizada_jun
+    type: number
+    decimalChar: ","
+  - name: Desp. Realizada Jul
+    target: vlr_despesa_realizada_jul
+    type: number
+    decimalChar: ","
+  - name: Desp. Realizada Ago
+    target: vlr_despesa_realizada_ago
+    type: number
+    decimalChar: ","
+  - name: Desp. Realizada Set
+    target: vlr_despesa_realizada_set
+    type: number
+    decimalChar: ","
+  - name: Desp. Realizada Out
+    target: vlr_despesa_realizada_out
+    type: number
+    decimalChar: ","
+  - name: Desp. Realizada Nov
+    target: vlr_despesa_realizada_nov
+    type: number
+    decimalChar: ","
+  - name: Desp. Realizada Dez
+    target: vlr_despesa_realizada_dez
+    type: number
+    decimalChar: ","
   - name: Crédito Autorizado 2023 (LOA + Créditos)
     target: vlr_credito_autorizado
     type: number
@@ -160,7 +268,7 @@ fields:
   - name: Previsão Física 2023
     target: vlr_previsao_fisica
     type: integer
-  - name: Fis Programado Inicial de Jan  a Mar
+  - name: Fis Programado Inicial de Jan  a Dez
     target: vlr_prog_fisica_inicial_periodo_ref
     type: integer
   - name: Meta Física Reprogramada
@@ -175,6 +283,33 @@ fields:
   - name: Fis Realizado Mar
     target: vlr_fisico_realizado_mar
     type: integer
+  - name: Fis Realizado Abr
+    target: vlr_fisico_realizado_abr
+    type: integer
+  - name: Fis Realizado Mai
+    target: vlr_fisico_realizado_mai
+    type: integer
+  - name: Fis Realizado Jun
+    target: vlr_fisico_realizado_jun
+    type: integer
+  - name: Fis Realizado Jul
+    target: vlr_fisico_realizado_jul
+    type: integer
+  - name: Fis Realizado Ago
+    target: vlr_fisico_realizado_ago
+    type: integer
+  - name: Fis Realizado Set
+    target: vlr_fisico_realizado_set
+    type: integer
+  - name: Fis Realizado Out
+    target: vlr_fisico_realizado_out
+    type: integer
+  - name: Fis Realizado Nov
+    target: vlr_fisico_realizado_nov
+    type: integer
+  - name: Fis Realizado Dez
+    target: vlr_fisico_realizado_dez
+    type: integer
   - name: Realização Física 2023
     target: vlr_fisico_realizado
     type: integer
@@ -186,6 +321,33 @@ fields:
     type: integer
   - name: Pessoa Remunerada Mar
     target: vlr_pessoa_remunerada_mar
+    type: integer
+  - name: Pessoa Remunerada Abr
+    target: vlr_pessoa_remunerada_abr
+    type: integer
+  - name: Pessoa Remunerada Mai
+    target: vlr_pessoa_remunerada_mai
+    type: integer
+  - name: Pessoa Remunerada Jun
+    target: vlr_pessoa_remunerada_jun
+    type: integer
+  - name: Pessoa Remunerada Jul
+    target: vlr_pessoa_remunerada_jul
+    type: integer
+  - name: Pessoa Remunerada Ago
+    target: vlr_pessoa_remunerada_ago
+    type: integer
+  - name: Pessoa Remunerada Set
+    target: vlr_pessoa_remunerada_set
+    type: integer
+  - name: Pessoa Remunerada Out
+    target: vlr_pessoa_remunerada_out
+    type: integer
+  - name: Pessoa Remunerada Nov
+    target: vlr_pessoa_remunerada_nov
+    type: integer
+  - name: Pessoa Remunerada Dez
+    target: vlr_pessoa_remunerada_dez
     type: integer
   - name: Realização Pessoa Remunerada
     target: vlr_realizacao_pessoa_remunerada

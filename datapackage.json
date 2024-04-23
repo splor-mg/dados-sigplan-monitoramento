@@ -11,9 +11,9 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:766e89f142c751dca19eeeb0203e47ed5902048718e0a015129ad77091d89e6c",
-      "bytes": 1152917,
-      "fields": 64,
+      "hash": "sha256:633f0b6035fcb0befbfd1e920e8ddb3aa27ba8834a25f6cefddcc58a6d2e6529",
+      "bytes": 1364030,
+      "fields": 109,
       "rows": 908,
       "schema": {
         "fields": [
@@ -185,7 +185,7 @@
           {
             "name": "vlr_prog_inicial_periodo_ref",
             "type": "number",
-            "source": "Orç. Programado Inicial de Jan a Mar"
+            "source": "Orç. Programado Inicial de Jan a Dez"
           },
           {
             "name": "vlr_prog_inicial_outras_despesas_jan",
@@ -201,6 +201,51 @@
             "name": "vlr_prog_inicial_outras_despesas_mar",
             "type": "number",
             "source": "Prog. Inicial Outras Desp. Mar"
+          },
+          {
+            "name": "vlr_prog_inicial_outras_despesas_abr",
+            "type": "number",
+            "source": "Prog. Inicial Outras Desp. Abr"
+          },
+          {
+            "name": "vlr_prog_inicial_outras_despesas_mai",
+            "type": "number",
+            "source": "Prog. Inicial Outras Desp. Mai"
+          },
+          {
+            "name": "vlr_prog_inicial_outras_despesas_jun",
+            "type": "number",
+            "source": "Prog. Inicial Outras Desp. Jun"
+          },
+          {
+            "name": "vlr_prog_inicial_outras_despesas_jul",
+            "type": "number",
+            "source": "Prog. Inicial Outras Desp. Jul"
+          },
+          {
+            "name": "vlr_prog_inicial_outras_despesas_ago",
+            "type": "number",
+            "source": "Prog. Inicial Outras Desp. Ago"
+          },
+          {
+            "name": "vlr_prog_inicial_outras_despesas_set",
+            "type": "number",
+            "source": "Prog. Inicial Outras Desp. Set"
+          },
+          {
+            "name": "vlr_prog_inicial_outras_despesas_out",
+            "type": "number",
+            "source": "Prog. Inicial Outras Desp. Out"
+          },
+          {
+            "name": "vlr_prog_inicial_outras_despesas_nov",
+            "type": "number",
+            "source": "Prog. Inicial Outras Desp. Nov"
+          },
+          {
+            "name": "vlr_prog_inicial_outras_despesas_dez",
+            "type": "number",
+            "source": "Prog. Inicial Outras Desp. Dez"
           },
           {
             "name": "vlr_prog_inicial_outras_despesas",
@@ -223,6 +268,51 @@
             "source": "Prog. Inicial Desp. Pessoal e Auxílios Mar"
           },
           {
+            "name": "vlr_prog_inicial_pessoal_auxilios_abr",
+            "type": "number",
+            "source": "Prog. Inicial Desp. Pessoal e Auxílios Abr"
+          },
+          {
+            "name": "vlr_prog_inicial_pessoal_auxilios_mai",
+            "type": "number",
+            "source": "Prog. Inicial Desp. Pessoal e Auxílios Mai"
+          },
+          {
+            "name": "vlr_prog_inicial_pessoal_auxilios_jun",
+            "type": "number",
+            "source": "Prog. Inicial Desp. Pessoal e Auxílios Jun"
+          },
+          {
+            "name": "vlr_prog_inicial_pessoal_auxilios_jul",
+            "type": "number",
+            "source": "Prog. Inicial Desp. Pessoal e Auxílios Jul"
+          },
+          {
+            "name": "vlr_prog_inicial_pessoal_auxilios_ago",
+            "type": "number",
+            "source": "Prog. Inicial Desp. Pessoal e Auxílios Ago"
+          },
+          {
+            "name": "vlr_prog_inicial_pessoal_auxilios_set",
+            "type": "number",
+            "source": "Prog. Inicial Desp. Pessoal e Auxílios Set"
+          },
+          {
+            "name": "vlr_prog_inicial_pessoal_auxilios_out",
+            "type": "number",
+            "source": "Prog. Inicial Desp. Pessoal e Auxílios Out"
+          },
+          {
+            "name": "vlr_prog_inicial_pessoal_auxilios_nov",
+            "type": "number",
+            "source": "Prog. Inicial Desp. Pessoal e Auxílios Nov"
+          },
+          {
+            "name": "vlr_prog_inicial_pessoal_auxilios_dez",
+            "type": "number",
+            "source": "Prog. Inicial Desp. Pessoal e Auxílios Dez"
+          },
+          {
             "name": "vlr_prog_inicial_pessoal_auxilios",
             "type": "number",
             "source": "Total Prog. Inicial Desp. Pessoal e Auxílios"
@@ -243,6 +333,51 @@
             "source": "Desp. Realizada Mar"
           },
           {
+            "name": "vlr_despesa_realizada_abr",
+            "type": "number",
+            "source": "Desp. Realizada Abr"
+          },
+          {
+            "name": "vlr_despesa_realizada_mai",
+            "type": "number",
+            "source": "Desp. Realizada Mai"
+          },
+          {
+            "name": "vlr_despesa_realizada_jun",
+            "type": "number",
+            "source": "Desp. Realizada Jun"
+          },
+          {
+            "name": "vlr_despesa_realizada_jul",
+            "type": "number",
+            "source": "Desp. Realizada Jul"
+          },
+          {
+            "name": "vlr_despesa_realizada_ago",
+            "type": "number",
+            "source": "Desp. Realizada Ago"
+          },
+          {
+            "name": "vlr_despesa_realizada_set",
+            "type": "number",
+            "source": "Desp. Realizada Set"
+          },
+          {
+            "name": "vlr_despesa_realizada_out",
+            "type": "number",
+            "source": "Desp. Realizada Out"
+          },
+          {
+            "name": "vlr_despesa_realizada_nov",
+            "type": "number",
+            "source": "Desp. Realizada Nov"
+          },
+          {
+            "name": "vlr_despesa_realizada_dez",
+            "type": "number",
+            "source": "Desp. Realizada Dez"
+          },
+          {
             "name": "vlr_credito_autorizado",
             "type": "number",
             "source": "Crédito Autorizado 2023 (LOA + Créditos)"
@@ -260,7 +395,7 @@
           {
             "name": "vlr_prog_fisica_inicial_periodo_ref",
             "type": "integer",
-            "source": "Fis Programado Inicial de Jan  a Mar"
+            "source": "Fis Programado Inicial de Jan  a Dez"
           },
           {
             "name": "vlr_meta_fisica_reprogramada",
@@ -283,6 +418,51 @@
             "source": "Fis Realizado Mar"
           },
           {
+            "name": "vlr_fisico_realizado_abr",
+            "type": "integer",
+            "source": "Fis Realizado Abr"
+          },
+          {
+            "name": "vlr_fisico_realizado_mai",
+            "type": "integer",
+            "source": "Fis Realizado Mai"
+          },
+          {
+            "name": "vlr_fisico_realizado_jun",
+            "type": "integer",
+            "source": "Fis Realizado Jun"
+          },
+          {
+            "name": "vlr_fisico_realizado_jul",
+            "type": "integer",
+            "source": "Fis Realizado Jul"
+          },
+          {
+            "name": "vlr_fisico_realizado_ago",
+            "type": "integer",
+            "source": "Fis Realizado Ago"
+          },
+          {
+            "name": "vlr_fisico_realizado_set",
+            "type": "integer",
+            "source": "Fis Realizado Set"
+          },
+          {
+            "name": "vlr_fisico_realizado_out",
+            "type": "integer",
+            "source": "Fis Realizado Out"
+          },
+          {
+            "name": "vlr_fisico_realizado_nov",
+            "type": "integer",
+            "source": "Fis Realizado Nov"
+          },
+          {
+            "name": "vlr_fisico_realizado_dez",
+            "type": "integer",
+            "source": "Fis Realizado Dez"
+          },
+          {
             "name": "vlr_fisico_realizado",
             "type": "integer",
             "source": "Realização Física 2023"
@@ -301,6 +481,51 @@
             "name": "vlr_pessoa_remunerada_mar",
             "type": "integer",
             "source": "Pessoa Remunerada Mar"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_abr",
+            "type": "integer",
+            "source": "Pessoa Remunerada Abr"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_mai",
+            "type": "integer",
+            "source": "Pessoa Remunerada Mai"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_jun",
+            "type": "integer",
+            "source": "Pessoa Remunerada Jun"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_jul",
+            "type": "integer",
+            "source": "Pessoa Remunerada Jul"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_ago",
+            "type": "integer",
+            "source": "Pessoa Remunerada Ago"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_set",
+            "type": "integer",
+            "source": "Pessoa Remunerada Set"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_out",
+            "type": "integer",
+            "source": "Pessoa Remunerada Out"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_nov",
+            "type": "integer",
+            "source": "Pessoa Remunerada Nov"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_dez",
+            "type": "integer",
+            "source": "Pessoa Remunerada Dez"
           },
           {
             "name": "vlr_realizacao_pessoa_remunerada",
@@ -349,10 +574,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:793086f11e844954dc6fe8174fc2272fdadef702b8555a9df8ec535a98a43a9d",
-      "bytes": 58963777,
-      "fields": 62,
-      "rows": 60832,
+      "hash": "sha256:ae582f1a76625a09ed7ae649e9b7ff4e6e4e68f24c2b06e9c95dc7302156b987",
+      "bytes": 76480727,
+      "fields": 116,
+      "rows": 66339,
       "schema": {
         "fields": [
           {
@@ -601,6 +826,186 @@
             "source": "Desp. Realizada Mar"
           },
           {
+            "name": "vlr_despesa_realizada_investimento_abr",
+            "type": "number",
+            "source": "Desp. Realizada Investimento Abr"
+          },
+          {
+            "name": "vlr_despesa_realizada_outros_abr",
+            "type": "number",
+            "source": "Desp. Realizada Outros Abr"
+          },
+          {
+            "name": "vlr_despesa_realizada_pessoal_auxilios_abr",
+            "type": "number",
+            "source": "Desp. Realizada Pessoal e Auxílios Abr"
+          },
+          {
+            "name": "vlr_despesa_realizada_abr",
+            "type": "number",
+            "source": "Desp. Realizada Abr"
+          },
+          {
+            "name": "vlr_despesa_realizada_investimento_mai",
+            "type": "number",
+            "source": "Desp. Realizada Investimento Mai"
+          },
+          {
+            "name": "vlr_despesa_realizada_outros_mai",
+            "type": "number",
+            "source": "Desp. Realizada Outros Mai"
+          },
+          {
+            "name": "vlr_despesa_realizada_pessoal_auxilios_mai",
+            "type": "number",
+            "source": "Desp. Realizada Pessoal e Auxílios Mai"
+          },
+          {
+            "name": "vlr_despesa_realizada_mai",
+            "type": "number",
+            "source": "Desp. Realizada Mai"
+          },
+          {
+            "name": "vlr_despesa_realizada_investimento_jun",
+            "type": "number",
+            "source": "Desp. Realizada Investimento Jun"
+          },
+          {
+            "name": "vlr_despesa_realizada_outros_jun",
+            "type": "number",
+            "source": "Desp. Realizada Outros Jun"
+          },
+          {
+            "name": "vlr_despesa_realizada_pessoal_auxilios_jun",
+            "type": "number",
+            "source": "Desp. Realizada Pessoal e Auxílios Jun"
+          },
+          {
+            "name": "vlr_despesa_realizada_jun",
+            "type": "number",
+            "source": "Desp. Realizada Jun"
+          },
+          {
+            "name": "vlr_despesa_realizada_investimento_jul",
+            "type": "number",
+            "source": "Desp. Realizada Investimento Jul"
+          },
+          {
+            "name": "vlr_despesa_realizada_outros_jul",
+            "type": "number",
+            "source": "Desp. Realizada Outros Jul"
+          },
+          {
+            "name": "vlr_despesa_realizada_pessoal_auxilios_jul",
+            "type": "number",
+            "source": "Desp. Realizada Pessoal e Auxílios Jul"
+          },
+          {
+            "name": "vlr_despesa_realizada_jul",
+            "type": "number",
+            "source": "Desp. Realizada Jul"
+          },
+          {
+            "name": "vlr_despesa_realizada_investimento_ago",
+            "type": "number",
+            "source": "Desp. Realizada Investimento Ago"
+          },
+          {
+            "name": "vlr_despesa_realizada_outros_ago",
+            "type": "number",
+            "source": "Desp. Realizada Outros Ago"
+          },
+          {
+            "name": "vlr_despesa_realizada_pessoal_auxilios_ago",
+            "type": "number",
+            "source": "Desp. Realizada Pessoal e Auxílios Ago"
+          },
+          {
+            "name": "vlr_despesa_realizada_ago",
+            "type": "number",
+            "source": "Desp. Realizada Ago"
+          },
+          {
+            "name": "vlr_despesa_realizada_investimento_set",
+            "type": "number",
+            "source": "Desp. Realizada Investimento Set"
+          },
+          {
+            "name": "vlr_despesa_realizada_outros_set",
+            "type": "number",
+            "source": "Desp. Realizada Outros Set"
+          },
+          {
+            "name": "vlr_despesa_realizada_pessoal_auxilios_set",
+            "type": "number",
+            "source": "Desp. Realizada Pessoal e Auxílios Set"
+          },
+          {
+            "name": "vlr_despesa_realizada_set",
+            "type": "number",
+            "source": "Desp. Realizada Set"
+          },
+          {
+            "name": "vlr_despesa_realizada_investimento_out",
+            "type": "number",
+            "source": "Desp. Realizada Investimento Out"
+          },
+          {
+            "name": "vlr_despesa_realizada_outros_out",
+            "type": "number",
+            "source": "Desp. Realizada Outros Out"
+          },
+          {
+            "name": "vlr_despesa_realizada_pessoal_auxilios_out",
+            "type": "number",
+            "source": "Desp. Realizada Pessoal e Auxílios Out"
+          },
+          {
+            "name": "vlr_despesa_realizada_out",
+            "type": "number",
+            "source": "Desp. Realizada Out"
+          },
+          {
+            "name": "vlr_despesa_realizada_investimento_nov",
+            "type": "number",
+            "source": "Desp. Realizada Investimento Nov"
+          },
+          {
+            "name": "vlr_despesa_realizada_outros_nov",
+            "type": "number",
+            "source": "Desp. Realizada Outros Nov"
+          },
+          {
+            "name": "vlr_despesa_realizada_pessoal_auxilios_nov",
+            "type": "number",
+            "source": "Desp. Realizada Pessoal e Auxílios Nov"
+          },
+          {
+            "name": "vlr_despesa_realizada_nov",
+            "type": "number",
+            "source": "Desp. Realizada Nov"
+          },
+          {
+            "name": "vlr_despesa_realizada_investimento_dez",
+            "type": "number",
+            "source": "Desp. Realizada Investimento Dez"
+          },
+          {
+            "name": "vlr_despesa_realizada_outros_dez",
+            "type": "number",
+            "source": "Desp. Realizada Outros Dez"
+          },
+          {
+            "name": "vlr_despesa_realizada_pessoal_auxilios_dez",
+            "type": "number",
+            "source": "Desp. Realizada Pessoal e Auxílios Dez"
+          },
+          {
+            "name": "vlr_despesa_realizada_dez",
+            "type": "number",
+            "source": "Desp. Realizada Dez"
+          },
+          {
             "name": "vlr_despesa_realizada_investimento",
             "type": "number",
             "source": "Despesa Realizada Investimento 2023"
@@ -641,6 +1046,51 @@
             "source": "Fis Realizado Mar"
           },
           {
+            "name": "vlr_fisico_realizado_abr",
+            "type": "integer",
+            "source": "Fis Realizado Abr"
+          },
+          {
+            "name": "vlr_fisico_realizado_mai",
+            "type": "integer",
+            "source": "Fis Realizado Mai"
+          },
+          {
+            "name": "vlr_fisico_realizado_jun",
+            "type": "integer",
+            "source": "Fis Realizado Jun"
+          },
+          {
+            "name": "vlr_fisico_realizado_jul",
+            "type": "integer",
+            "source": "Fis Realizado Jul"
+          },
+          {
+            "name": "vlr_fisico_realizado_ago",
+            "type": "integer",
+            "source": "Fis Realizado Ago"
+          },
+          {
+            "name": "vlr_fisico_realizado_set",
+            "type": "integer",
+            "source": "Fis Realizado Set"
+          },
+          {
+            "name": "vlr_fisico_realizado_out",
+            "type": "integer",
+            "source": "Fis Realizado Out"
+          },
+          {
+            "name": "vlr_fisico_realizado_nov",
+            "type": "integer",
+            "source": "Fis Realizado Nov"
+          },
+          {
+            "name": "vlr_fisico_realizado_dez",
+            "type": "integer",
+            "source": "Fis Realizado Dez"
+          },
+          {
             "name": "vlr_fisico_realizado",
             "type": "integer",
             "source": "Realização Física 2023"
@@ -659,6 +1109,51 @@
             "name": "vlr_pessoa_remunerada_mar",
             "type": "integer",
             "source": "Pessoa Remunerada Mar"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_abr",
+            "type": "integer",
+            "source": "Pessoa Remunerada Abr"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_mai",
+            "type": "integer",
+            "source": "Pessoa Remunerada Mai"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_jun",
+            "type": "integer",
+            "source": "Pessoa Remunerada Jun"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_jul",
+            "type": "integer",
+            "source": "Pessoa Remunerada Jul"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_ago",
+            "type": "integer",
+            "source": "Pessoa Remunerada Ago"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_set",
+            "type": "integer",
+            "source": "Pessoa Remunerada Set"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_out",
+            "type": "integer",
+            "source": "Pessoa Remunerada Out"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_nov",
+            "type": "integer",
+            "source": "Pessoa Remunerada Nov"
+          },
+          {
+            "name": "vlr_pessoa_remunerada_dez",
+            "type": "integer",
+            "source": "Pessoa Remunerada Dez"
           },
           {
             "name": "empty_column",
@@ -935,5 +1430,5 @@
       }
     }
   ],
-  "updated_at": "2024-04-12T15:19:25"
+  "updated_at": "2024-04-23T15:26:59"
 }
