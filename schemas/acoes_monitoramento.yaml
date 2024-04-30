@@ -373,8 +373,5 @@ fields:
     target: empty_column
     type: any
 primaryKey:
-  - Ano Monitoramento
-  - Código do Programa
-  - Código da Ação
   - Código da Unidade Orçamentária Responsável pela Ação
-  - Código da Unidade Orçamentária Responsável pelo Programa
+  - Código da Ação
